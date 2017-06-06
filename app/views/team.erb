@@ -1,3 +1,9 @@
+<h1>Team Name: <%= @team["name"] %></h1>
+<h1>Team Motto: <%= @team["motto"] %></h1>
 
 
-
+<% @members.each do |member| %>
+  <p>Hero Name: <%= member["name"] %></p>
+  <p>Hero Power: <%= member["power"] %></p>
+  <p>Hero Biography: <%= member["bio"] %></p>
+<% end %>
